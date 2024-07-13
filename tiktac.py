@@ -20,12 +20,12 @@ def sum(a,b,c):
     return a+b+c
 
 def checkwin(xstate, zstate):
-    wins = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8],[0,4,8], [2,4,6]]
+    wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8],[0, 4, 8], [2, 4, 6]]
     for win in wins:
         if(sum(xstate[win[0]], xstate[win[1]], xstate[win[2]]) == 3):
             print("X won")
             
-        if(sum(zstate[win[0]], zstate[win[1]], zstate[win[2]]) == 3):
+             if(sum(zstate[win[0]], zstate[win[1]], zstate[win[2]]) == 3):
             print("O won")
             
         else:
